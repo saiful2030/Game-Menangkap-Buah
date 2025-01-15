@@ -21,7 +21,7 @@ quit_sound = pygame.mixer.Sound("assets/quit.mp3")  # file quit.mp3
 # Ukuran layar
 SCREEN_WIDTH, SCREEN_HEIGHT = 1280, 720
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption("Menangkap Buah Jatuh")
+pygame.display.set_caption("Tangkap Buah Jatuh")
 
 # Memuat gambar latar belakang
 background_image = pygame.image.load("assets/bg.png")  # Pastikan file bg.png ada di folder assets
@@ -60,7 +60,7 @@ object_speed = 3  # Kecepatan objek jatuh
 def show_home_screen():
     screen.blit(background_image, (0, 0))
 
-    title_text = large_font.render("MENANGKAP BUAH JATUH", True, WHITE)
+    title_text = large_font.render("TANGKAP BUAH JATUH", True, WHITE)
     play_text = font.render("PLAY", True, GREEN)
     quit_text = font.render("QUIT", True, RED)
 
